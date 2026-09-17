@@ -12,7 +12,7 @@ jobs:
         run: echo "Olá, mundo! Meu primeiro GitHub Action."
 
       - name: Trocar a Mensagem
-        run: echo "Fernanda da Costa Aguiar"
+        run: echo "Fernanda e Julia rsrsrsrsrsrrs"
 
       - name: Mostrar data e hora
         run: date
