@@ -1,6 +1,8 @@
 name: Ola Mundo
 
-on: push
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   minha-tarefa:
@@ -8,9 +10,12 @@ jobs:
     steps:
       - name: Dizer ola
         run: echo "Olá, mundo! Meu primeiro GitHub Action."
+
       - name: Trocar a Mensagem
         run: echo "Fernanda da Costa Aguiar"
+
       - name: Mostrar data e hora
         run: date
+
       - name: Descobrir quem fez o commit
-        run: echo "Commit feito por ${{github.actor}}"
+        run: echo "Commit feito por ${{ github.actor }}"
